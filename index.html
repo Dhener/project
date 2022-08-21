@@ -19,7 +19,7 @@
     <!-- Lugar odne vamos desenvolver todo o home -->
 
     <section id="home">
-        <nav>
+        <nav class="header">
             <img src="img/arquivos_logo/logo_alunos-fundo-branco-editada.png" alt="logo azul Spartacus">
             <div class="navigation">
                 <ul>
@@ -28,6 +28,7 @@
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#base">Missão, visão e verbos</a></li>
                     <li><a href="#contact">Fale conosco</a></li>
+                    <li><a href="#formulario ">Cadastre-se</a></li>
                 </ul>
             </div>
         </nav>
@@ -181,8 +182,8 @@
         </div>
     </section> -->
 
-    <!--ALTERAÇÃO DE DHENER NO FORMULÁRIO-->
-    <div class="container">
+    <!--ALTERAÇÃO DE DHENER-->
+    <div class="container" id="formulario">
         <div style="text-align: center;">
             <h2>Fale Conosco</h2>
             <p>Cadastre-se e entraremos em contato com você em breve:</p>
@@ -238,5 +239,11 @@
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-whatsapp w3-hover-opacity"></i>
     </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('.header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
