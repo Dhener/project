@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <!-- Lugar odne vamos desenvolver todo o home -->
 
     <section id="home">
-        <nav>
+        <nav class="header">
             <img src="img/arquivos_logo/logo_alunos-fundo-branco-editada.png" alt="logo azul Spartacus">
             <div class="navigation">
                 <ul>
@@ -28,6 +29,7 @@
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#base">Missão, visão e verbos</a></li>
                     <li><a href="#contact">Fale conosco</a></li>
+                    <li><a href="#formulario ">Cadastre-se</a></li>
                 </ul>
             </div>
         </nav>
@@ -41,12 +43,14 @@
         </div>
     </section>
 
+    <!--Mudança feita pelo Dhener-->
+
     <!-- Parte que desenvolveremos as opções -->
 
     <section id="features">
 
         <h1>Essência da marca</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <p>Recursos chaves do nosso projeto.</p>
         <div class="fea-base">
             <div class="fea-box">
                 <img src="img/graduation-cap-solid.svg" alt="" width="30px">
@@ -182,7 +186,7 @@
     </section> -->
 
     <!--ALTERAÇÃO DE DHENER-->
-    <div class="container">
+    <div class="container" id="formulario">
         <div style="text-align: center;">
             <h2>Fale Conosco</h2>
             <p>Cadastre-se e entraremos em contato com você em breve:</p>
@@ -238,5 +242,11 @@
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-whatsapp w3-hover-opacity"></i>
     </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('.header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
